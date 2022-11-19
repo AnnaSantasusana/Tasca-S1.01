@@ -3,30 +3,21 @@ package n1exercici2_AnnaSantasusana;
 public class Car {
 	
 	//Atributs
-	private static final String BRAND;
+	private static final String BRAND = "Audi";
 	private static String model;
 	private final int POWER;
 	
-	//Inicializador de clase. Bloque estático
-	static {
-		BRAND = "Audi";
-		model = "A4";
-	}
-	
-	//Inicializador de instancia. Bloque de inicialización
-	{
-		POWER = 110;
-	}
-	
 	//Constructor
-	public Car() {
-		
+	public Car(String model, int POWER) {
+		Car.model = model;
+		this.POWER = POWER;
 	}
 	
-	public Car(String model) {
+	public Car(String BRAND, String model, int POWER) {
 		Car.model = model;
+		this.POWER = POWER;
 	}
-
+	
 	//Getters
 	public static String getBRAND() {
 		return BRAND;

@@ -2,11 +2,12 @@ package n1exercici1_AnnaSantasusana;
 
 public abstract class Instrument {
 
-	protected String name;
-	protected float price;
+	private String name;
+	private float price;
 	
-	public Instrument() {
-		
+	public Instrument(String name, float price) {
+		this.name = name;
+		this.price = price;
 	}
 	
 	public String getName() {

@@ -2,13 +2,16 @@ package n1exercici1_AnnaSantasusana;
 
 public class PercussionInstrument extends Instrument{
 
-	{
-		name = "Drums";
-		price = 666;
+	static {
+		System.out.println("Instruments are ready to play");
 	}
 	
-	public PercussionInstrument() {
-		super();
+	{
+		System.out.println("Percussion instruments begin to play");
+	}
+	
+	public PercussionInstrument(String name, float price) {
+		super(name, price);
 	}
 	
 	public String playInstrument() {
@@ -16,6 +19,6 @@ public class PercussionInstrument extends Instrument{
 	}
 	
 	public String toString() {
-		return "Instrument name: " + this.name + ", Instrument price: " + this.price + "€";
+		return "Instrument name: " + super.getName() + ", Instrument price: " + super.getPrice() + "€";
 	}
 }

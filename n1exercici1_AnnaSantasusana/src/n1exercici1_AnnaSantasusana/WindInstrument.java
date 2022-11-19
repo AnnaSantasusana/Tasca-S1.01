@@ -2,13 +2,16 @@ package n1exercici1_AnnaSantasusana;
 
 public class WindInstrument extends Instrument {
 	
-	{
-		name = "Trumpet";
-		price = 350;
+	static {
+		System.out.println("Instruments are ready to play");
 	}
 	
-	public WindInstrument() {
-		super();
+	{
+		System.out.println("Wind instruments begin to play");
+	}
+	
+	public WindInstrument(String name, float price) {
+		super(name, price);
 	}
 	
 	public String playInstrument() {
@@ -16,6 +19,6 @@ public class WindInstrument extends Instrument {
 	}
 	
 	public String toString() {
-		return "Instrument name: " + this.name + ", Instrument price: " + this.price + "€";
+		return "Instrument name: " + super.getName() + ", Instrument price: " + super.getPrice() + "€";
 	}
 }

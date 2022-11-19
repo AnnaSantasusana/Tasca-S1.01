@@ -2,13 +2,16 @@ package n1exercici1_AnnaSantasusana;
 
 public class StringInstrument extends Instrument{
 
-	{
-		name = "Guitar";
-		price = 275;
+	static {
+		System.out.println("Instruments are ready to play");
 	}
 	
-	public StringInstrument() {
-		super();
+	{
+		System.out.println("String instruments begin to play");
+	}
+	
+	public StringInstrument(String name, float price) {
+		super(name, price);
 	}
 	
 	public String playInstrument() {
@@ -16,6 +19,6 @@ public class StringInstrument extends Instrument{
 	}
 	
 	public String toString() {
-		return "Instrument name: " + this.name + ", Instrument price: " + this.price + "€";
+		return "Instrument name: " + super.getName() + ", Instrument price: " + super.getPrice() + "€";
 	}
 }
