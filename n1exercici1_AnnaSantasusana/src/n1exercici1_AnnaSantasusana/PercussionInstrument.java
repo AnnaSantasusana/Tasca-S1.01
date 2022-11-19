@@ -21,4 +21,5 @@ public class PercussionInstrument extends Instrument{
 	public String toString() {
 		return "Instrument name: " + super.getName() + ", Instrument price: " + super.getPrice() + "€";
 	}
+	
 }

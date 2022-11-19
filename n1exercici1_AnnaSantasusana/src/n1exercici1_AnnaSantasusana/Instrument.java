@@ -31,4 +31,5 @@ public abstract class Instrument {
 	public String toString() {
 		return "Instrument name: " + this.name + ", Instrument price: " + this.price + "€";
 	}
+	
 }

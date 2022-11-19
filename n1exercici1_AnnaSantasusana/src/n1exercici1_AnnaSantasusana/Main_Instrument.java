@@ -25,4 +25,5 @@ public class Main_Instrument {
 		System.out.println(string2.playInstrument() + "\n");
 
 	}
+	
 }
