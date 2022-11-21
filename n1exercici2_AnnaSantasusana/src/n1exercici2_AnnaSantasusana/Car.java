@@ -13,11 +13,6 @@ public class Car {
 		this.POWER = POWER;
 	}
 	
-	public Car(String BRAND, String model, int POWER) {
-		Car.model = model;
-		this.POWER = POWER;
-	}
-	
 	//Getters
 	public static String getBRAND() {
 		return BRAND;
